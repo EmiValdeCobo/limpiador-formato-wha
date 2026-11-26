@@ -33,7 +33,19 @@ assert.equal(
   'Lista:\n- Pan\n- Leche\n\nAvísame\nListo,\ngracias.'
 );
 
-// 4. Texto sin encabezados reconocibles
+// 4. Fecha sin año (mensajes del año en curso), formato "[fecha, hora]"
+assert.equal(
+  cleanWhatsAppText(
+    [
+      '[25/11, 8:41 p. m.] Emiliano Jacobo: sabes esto',
+      'https://limpiador-formato-wha.vercel.app/',
+      '[25/11, 8:42 p. m.] Edu: tremenda tool',
+    ].join('\n')
+  ),
+  'sabes esto\nhttps://limpiador-formato-wha.vercel.app/\ntremenda tool'
+);
+
+// 5. Texto sin encabezados reconocibles
 const plain = 'Recordatorio: enviar informe.\nVersión 2024 - final.';
 assert.equal(cleanWhatsAppText(plain), plain);
 

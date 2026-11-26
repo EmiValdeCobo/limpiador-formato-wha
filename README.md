@@ -41,6 +41,13 @@ pnpm start    # sirve out/ localmente
 
 También funciona con `npm`.
 
+## Ramas
+
+- `develop`: desarrollo. Todo cambio nuevo se hace aquí (o en ramas que salen de aquí).
+- `main`: despliegue. Vercel publica en producción cada push a `main`; los pushes a `develop` generan despliegues de vista previa.
+
+Para publicar: abre un pull request de `develop` hacia `main` y fusiónalo.
+
 ## Estructura
 
 ```

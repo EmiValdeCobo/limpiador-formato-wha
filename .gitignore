@@ -1,6 +1,30 @@
+# Dependencias
 node_modules/
+.pnpm-store/
+
+# Build de Next.js
 .next/
 out/
-.DS_Store
-*.log
+build/
+next-env.d.ts
+*.tsbuildinfo
+
+# Variables de entorno
+.env
 .env*.local
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# Despliegue
+.vercel/
+.netlify/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

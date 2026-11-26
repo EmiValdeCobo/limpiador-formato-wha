@@ -1,0 +1,9 @@
+{
+  "name": "limpio. — Limpiador de WhatsApp",
+  "short_name": "limpio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f4f1",
+  "theme_color": "#f4f4f1",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
